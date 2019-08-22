@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class DiceGame {
+	
+	public static void main(String[] args) {
+		System.out.println("What number do you think your dice would land on?");
+		
+		Scanner number = new Scanner(System.in);
+		int guess = number.nextInt();
+		
+		int diceroll = (int)(Math.random() * 6) + 1;
+		
+		if (guess == diceroll){
+			System.out.println("Yeah! You won!");
+		}else{
+			System.out.println("Sorry you lost.");
+		}
+				
+	}
+	
+
+}
